@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/*header*/
+.util_menu_wrap{background: #0044AF;}
+.util_menu{width: 1200px;margin: 0 auto}
+.util_menu .left{float: left;}
+.util_menu .right{float: right;}
