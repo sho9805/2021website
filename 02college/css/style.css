@@ -35,7 +35,9 @@
 			background-repeat:repeat,no-repeat;
 			background-position: center;
 			background-size: auto,cover;padding: 200px;position: relative;top: 0;}
-#contents .container{width: 1200px;margin: 0 auto;background: #fff;}
+#contents .container{width: 1200px;margin: 0 auto;margin-top: 40px;	background: #fff;}
+
+
 .mainbn{position: absolute;top: 0;width: 1200px;margin: 0 auto;height: 125px;top: 70px;_background-color: pink;}
 .mainbn p{display: block;font-size: 40px;color: #fff;}
 .mainbn h1{font-size: 55px;color: #fff;}
@@ -47,13 +49,32 @@
 .mainbn  li:nth-child(3){margin-right: 40px;}
 .mainbn  li:last-child {margin-right: 0;padding: 0;}
 
-
-#contents .container>ul{margin-top: 40px;}
 #contents .container>ul>li{float: left;width: 25%;height: 225px;}
-#contents .container>ul>li:nth-child(2n){background:pink;}
+
 #contents .container>ul>li:nth-child(1){;width: 75%;height: 450px;background: green;}
-.slider .sliderTxt{position: absolute;top: 300px;margin-left: 80px;font-size: 50px;}
+.slider {position: relative;}
+.slider .sliderTxt{position: absolute;top:60px;margin-left: 80px;}
+.slider .sliderTxt p{font-size: 60px;color: #1651b7;}
+.slider .sliderTxt ul{background-color: #00163b;display: block;width: 200px;height: 50px; margin: 20px;margin-left: 0;}
+.slider .sliderTxt li{text-align: center;padding-top: 8px;height: 50px;	}
+.slider .sliderTxt a p{color: #fff;font-size: 23px;display: block;width: 200px;height: 50px;margin-left: -10px;	}
+.slider .sliderTxt li:hover{background:#1651b7;}
+.slider .sliderTxt .images1{display:block;margin-left: 160px;margin-top: -40px;width: 10px;height:15px;}
+.leftBtn{position: absolute;top:45%;padding: 20px;cursor:pointer;background: #999;}
+.rightBtn{position: absolute;top:45%;padding: 20px;cursor:pointer;background: #999;}
+.rightBtn:hover{background: #555;}
+.leftBtn:hover{background: 	#555;}
+.rightBtn{right:10px;}
+.left{left:10px;}
+
+
+
 #contents .container>ul>li:nth-child(2){height: 450px;}
+.two{position: relative;top: 0;}
+.two p{display: block;position: absolute;top: 0;	}
+
+
+
 #contents .container>ul>li:nth-child(3){background-color: #00163b}
 #contents .container>ul>li:nth-child(4){background-color: #1651b7;}
 #contents .container>ul>li:nth-child(5){background-color: #fff;}
