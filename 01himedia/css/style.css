@@ -9,10 +9,7 @@ ul.utilMenu li:after{
 	content:"";display: block;width: 1px;height: 10px;
 	background-color: #f00;position: absolute;right: 0;top:10px;
 }
-ul.utilMenu li:first-child:before{
-	content:"";display: block;width: 1px;height: 10px;
-	background-color: #00f;position: absolute;left: 0;top:10px;
-}
+ul.utilMenu li:first-child:before{display: none;}
 /*ul.utilMenu li:last-child:after{content:"";display: none;}*/
 ul.utilMenu li a{display: block;padding:0 10px;line-height: 30px;}
 
