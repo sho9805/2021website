@@ -1,0 +1,13 @@
+  @charset "utf-8";
+/*header*/
+#headerWrap{background-color: #0e73a7;height: 155px;
+		background-image: url(../images/04비행기.jpg);
+		background-repeat: no-repeat;
+		background-position: top center;}
+#headerWrap .header1{_background: #000;display: block;width: 980px;	height: 85px;margin: 0 auto;position: relative;	top: 0;	}
+#headerWrap .header1 img{position: absolute;top: 20px;}
+
+
+
+
+#headerWrap .header2{background-color: #fff;height: 50px;margin-top: 10px;}
