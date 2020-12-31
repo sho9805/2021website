@@ -59,40 +59,50 @@
 #contents{background-image: url(../images/sky.jpg);
 		background-repeat: no-repeat;
 		background-size:cover;
-		width: 100%;height: 1236px;}
+		padding: 56px;}
 
-.con{width: 980px;height: 1067px;_background: #000;margin: 0 auto;position: relative;top: 56px;}
-.cbox_one{width: 980px;height: 556px;position: absolute;top: 0;_background: #fff;}
-.cbox_two{width: 980px;height: 240px;_background: #fff;position: absolute;top: 572px;}
-.cbox_three{width: 980px;height: 240px;_background: #fff;position: absolute;bottom: 0;}
+.con{width: 980px;height: 1068px;_background: #000;margin: 0 auto;}
+.cbox_one{width: 980px;height: 556px;_background: #fff;margin-bottom: 16px;}
+.cbox_two{width: 980px;height: 240px;_background: #fff;margin-bottom: 16px;}
+.cbox_three{width: 980px;height: 240px;_background: #fff;}
 
-.cbox_one .one{width: 482px;height: 556px;float:left;margin-left: 16px;_background: pink;}
-.cbox_one .one:first-child{margin-left: 0px;_background: pink;}
+.cbox_one .one{width: 482px;height: 556px;float:left;margin-left: 16px;background: pink;margin-bottom: 16px;}
+.cbox_one .one:first-child{margin-left: 0px;}
 
-.cbox_two div{width: 233px;height: 240px;float:left;margin-left: 16px;background: pink;}
-.cbox_two div:first-child{margin-left: 0px;background: pink;}
+.cbox_two div{width: 233px;height: 240px;float:left;margin-left: 16px;background: pink;margin-bottom: 16px;}
+.cbox_two div:first-child{margin-left: 0px;}
 
-.cbox_three div{width: 233px;height: 240px;float:left;margin-left: 16px;_background: pink;}
-.cbox_three div:first-child{margin-left: 0px;background: pink;}
+.cbox_three div{width: 233px;height: 240px;float:left;margin-left: 16px;background: pink;}
+.cbox_three div:first-child{margin-left: 0px;}
 
-.one_one{width: 482px;height: 300px;background: #000;margin-bottom: 16px;}
-.one_two{width: 482px;height: 240px;_background: #000;}
-.tr .prs p{background: rgb(22,39,49);width: 100px;height: 100px;}
+.ck{width: 482px;height: 300px;background: #000;margin-bottom: 16px;}
+.cleft_traveli{width: 482px;height: 240px;_background: #000;}
+.lefttraveli div{position: relative;top: 0;width: 233px;height: 240px;background: green;float: left;margin-right: 16px;}
+.lefttraveli div:last-child{margin-right: 0;}
 
-.tr{width: 233px;height: 240px;_background: #fff;float: left;margin-right: 16px;}
-.tr:last-child{margin-right:0;}
-.tri{width: 233px;height: 240px;}
+.lefttraveli div a{position: absolute;
+					bottom: 0;left: 0;width: 233px;height: 50px;
+					background: rgb(21,38,48);}
+.lefttraveli div p{color:#fff;font-size: 17px;padding: 12px 20px;}
+.lefttraveli div span{color:green;}
+.btn{_background: #000;
+	position: absolute;bottom: 18px;right:20px;
+	width: 10px;height:15px;}
+.zoom{transition: 0.3s;
+	transform-origin:0 0;transform:scale(1);}
+.zoom:hover{transform: scale(1.1);width: 100%;}
+ 
+
+
 
 .bxname{width: 482px;height: 220px;_background: yellow;padding: 30px;position: relative;top: 0;}
-.bxname h3{font-size: 60px;color:rgb(22,39,49);padding-bottom: 5px;
-			}
+.bxname h3{font-size: 60px;color:rgb(22,39,49);padding-bottom: 5px;}
 .bxname p{font-size: 25px;}
-.bxname .bxi{width: 760px;height: 530px;position: absolute;top: 100px;left: -190px;
-			}
-
-.three_three{background-image: url(../images/travel9.jpg);
-			background-position: center;
-			background-size: cover;}
-.three_four{background-image: url(../images/travel10.jpg);
-			background-position: center;
-			background-size: cover;}
+.bxname img{position: absolute;right: -60px;top: 100px;
+			animation-name: bal01;
+			animation-duration: 3s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;}
+@keyframes bal01{0%{top: 100px;}
+				50%{top: 60px;}
+				100%{top: 100px;}}
