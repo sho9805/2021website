@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
@@ -26,6 +29,13 @@
 			$(".sliderTwo").bxSlider({
 				controls:false
 			});
+
+			$(".youtube").colorbox({
+            iframe:true,
+            innerWidth:560,
+            innerHeight:315
+       		});
+
 			});
 	</script>
 	<style>
@@ -239,7 +249,7 @@
 
 				<li class="seven"><!-- 50% -->
 					<img src="images/school_green.png" alt="" class="im1">
-					<a href="#"><img src="images/play.png" alt="" class="im2"></a>
+					<a href="https://www.youtube.com/embed/v-s-oDrqYPs" class="youtube" title="영상"><img src="images/play.png" alt="" class="im2"></a>
 				</li>
 
 
