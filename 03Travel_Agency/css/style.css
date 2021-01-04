@@ -72,37 +72,52 @@
 .cbox_two div{width: 233px;height: 240px;float:left;margin-left: 16px;background: pink;margin-bottom: 16px;}
 .cbox_two div:first-child{margin-left: 0px;}
 
-.cbox_three div{width: 233px;height: 240px;float:left;margin-left: 16px;background: pink;}
+.cbox_three div{width: 233px;height: 240px;float:left;margin-left: 16px;_background: pink;}
 .cbox_three div:first-child{margin-left: 0px;}
 
 .ck{width: 482px;height: 300px;background: #000;margin-bottom: 16px;}
+
 .cleft_traveli{width: 482px;height: 240px;_background: #000;}
 .lefttraveli div{position: relative;top: 0;width: 233px;height: 240px;background: green;float: left;margin-right: 16px;}
 .lefttraveli div:last-child{margin-right: 0;}
 
-.lefttraveli div a{position: absolute;
-					bottom: 0;left: 0;width: 233px;height: 50px;
-					background: rgb(21,38,48);}
-.lefttraveli div p{color:#fff;font-size: 17px;padding: 12px 20px;}
-.lefttraveli div span{color:green;}
+.tra{position: absolute;
+	bottom: 0;left: 0;width: 233px;height: 50px;
+	background: rgb(21,38,48);}
+.tra p{color:#fff;font-size: 17px;padding: 13px 20px;}
+.tra span{color:green;}
 .btn{_background: #000;
 	position: absolute;bottom: 18px;right:20px;
 	width: 10px;height:15px;}
 .zoom{transition: 0.3s;
-	transform-origin:0 0;transform:scale(1);}
-.zoom:hover{transform: scale(1.1);width: 100%;}
- 
+	transform-origin:0 0 0 0;
+	transform:scale(1);
+	}
+.zoom:hover{transform: scale(1.1);width: 100%;/*overflow: hidden;*/}
 
-
-
-.bxname{width: 482px;height: 220px;_background: yellow;padding: 30px;position: relative;top: 0;}
+.bxname{width: 482px;height: 220px;
+		_background: yellow;
+		padding: 30px;
+		position: relative;top: 0;}
 .bxname h3{font-size: 60px;color:rgb(22,39,49);padding-bottom: 5px;}
 .bxname p{font-size: 25px;}
-.bxname img{position: absolute;right: -60px;top: 100px;
+.bxname img{position: absolute;
+			right: -60px;top: 100px;
+			margin: 0 auto;
+			margin-left: -500px;
 			animation-name: bal01;
 			animation-duration: 3s;
 			animation-iteration-count:infinite;
-			animation-direction:alternate;}
+			animation-direction:}
 @keyframes bal01{0%{top: 100px;}
 				50%{top: 60px;}
 				100%{top: 100px;}}
+
+
+.cbox_two{position: relative;top: 0;}
+.cbox_two a{position: absolute;bottom: 0;margin-left: -233px;width: 233px;height: 50px;}
+.two_one a{background: green;}
+.two_two a{background:rgb(21,38,48);}
+.two_three a{background: rgba(5,5,5,0.5);}
+.cbox_two a p{color: white;font-size: 14px;padding:4px 20px;}
+.cbox_two a p span{color:yellow;}
