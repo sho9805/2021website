@@ -78,12 +78,33 @@
 	</div>
 
 	<div id="contents">
-		<img src=" 비행기 움직이는거" alt="">
 		<div class="con">
 			<div class="cbox_one clearfix">
 
 				<div class="cleft one">
-					<div class="ck"></div>
+					<div class="ck">
+						<div class="menutap">
+							<a href="#">공항예약</a>
+							<a href="#">호텔예약</a>
+							<a href="#">렌트카</a>
+							<a href="#">휴양지</a>
+						</div>
+						<fieldset class="menu">
+							<label for="city" class="city">
+								가고싶은 나라를 선택하세요.
+							</label>
+						<!-- <input type="text" placeholder="선택하세요."> -->
+							<select name="ct" id="city" class="cityck" required>
+								<option value="선택">선택하세요.</option>
+								<option value="한국">대한민국</option>
+								<option value="중국">중국</option>
+								<option value="중국">일본</option>
+								<option value="중국">영국</option>
+								<option value="중국">미국</option>
+								<option value="중국">체코</option>
+							</select>
+						</fieldset>
+					</div>
 
 					<div class="lefttraveli clearfix">
 						<div class="cleft_traveli1">
@@ -107,7 +128,7 @@
 				<div class="one">
 					<div class="bxname">
 						<img src="images/balloon.png" alt="">
-						<h3>TRAVEL GO</h3>
+						<h3>TRAVEL <ins>GO</ins></h3>
 						<p>지금,여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</p>
 					</div>
 				</div>
@@ -119,42 +140,104 @@
 				<div class="two_one">
 					<img src="images/travel3.jpg" alt="">
 					<a href="#">
-						<p>HILLTON&nbsp;HOTEL&nbsp;(PARIS)<br><span>★★★</span>★★</p>
+						<p>HILLTON&nbsp;HOTEL&nbsp;(PARIS)<br><span class="cly">★★★</span>★★</p>
 					</a>
 				</div>		
 				<div class="two_two">
 					<img src="images/travel4.jpg" alt="">
 					<a href="#">
-						<p>관광명소(디즈니랜드)<br><span>★★★</span>★★</p>
+						<p>관광명소(디즈니랜드)<br><span class="cly">★★★</span>★★</p>
 					</a>
 				</div>		
 				<div class="two_three">
 					<img src="images/travel5.jpg" alt="">
+					<p class="ps">TOKYO</p>
 					<a href="#">
 						<p>20˚c&nbsp;구름조금<br><span>습도&nbsp;60%&nbsp;바람&nbsp;남남동&nbsp;2m/s</span></p>
 					</a>
 				</div>		
 				<div class="two_four">
 					<img src="images/travel6.jpg" alt="">
+					<p class="ps">"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
+					<p class="ps2">프랑스 파리 자유여행<br><span class="cly">★★★</span>★★</p>
+					<a href="#">
+						<p>facebook&nbsp;여행후기<br><span>(임정희님)</span></p>
+					</a>
 				</div>	
 			</div>
 
 
 			<div class="cbox_three">
-				<div class="three_one">
+				<div class="three">
 					<img src="images/travel7.jpg" alt="">
-				</div>		
-				<div class="three_two">
+					
+					<div class="bg">
+					</div>
+					<div class="wrap">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+					<div class="txt">
+						<p>여행정보<br><span>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span></p>
+					</div>
+				</div>	
+
+				<div class="three">
 					<img src="images/travel8.jpg" alt="">
+					<div class="bg">
+					</div>
+					<div class="wrap">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+					<div class="txt">
+						<p>맛집정보<br><span class="span">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span></p>
+					</div>
 				</div>		
-				<div class="three_three">
+
+				<div class="three">
 					<img src="images/travel9.jpg" alt="">
+					<div class="bg">
+					</div>
+					<div class="wrap">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+					<div class="txt">
+						<p>숙박정보<br><span>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span></p>
+					</div>
 				</div>		
-				<div class="three_four">
-					<img src="images/travel10.jpg" alt="">
+
+				<div class="three">
+					<img src="images/travel10.jpg" alt="" class="threei">
+					<div class="bg">
+					</div>
+					<div class="wrap">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+					<div class="txt">
+						<p>여행자후기<br><span>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</span></p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="footer">
+			<ul>
+				<li>
+					<a href="#">이용약관</a>
+					<a href="#" class="fb">개인정보취급방침</a>
+					<a href="#">사이트맵</a>
+					<a href="#">고객센터</a>
+					<a href="#">광고 및 제휴문의</a>
+				</li>
+				<li>
+					<p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호 : 123-45-678910 대표이사 : 홍길동 대표번호 : 02-1234-5678<br>COPYRIGHTⓒ2014 HIMEDIA TOUR. ALL RIGHTS RESERVED.</p>
+				</li>
+			</ul>
+		</div>
 	</div>
+
+
 </body>
 </html>
