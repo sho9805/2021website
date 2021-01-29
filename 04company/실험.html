@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>tast</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+	$(document).ready(function(){
+      $(".top_menu").hover(function(){
+        $(this).find(".sup_menu").show();
+      },function(){
+        $(this).find(".sup_menu").hide();
+      });
+      //$(선택자).hover(function(){},function(){});
+    });
+	</script>
+	<style>
+	body{background: pink;}
+	#header{height: 1950px;position: relative;margin-bottom: 10px;_background: #000;padding-top: 10px;	}
+
+	.main{position: absolute;width: 1260px;height: 60px;_background: #000;left:50%;transform:translateX(-50%);z-index:1;}
+	.main h1{line-height: 65px;float: left;}
+	.main h1 a{display: block;}
+	.main h1 a img{}
+
+	.top_menu{float: right;_background: #000;}
+	.top_menu ul{height: 60px;}
+	.top_menu ul li{float: left;margin-left: 10px;}
+	.top_menu ul li a{display: block;height: 60px;width: 120px;_background: red;font-size: 17px;font-weight: bold;text-align: center;line-height: 58px;color:white;}
+
+
+	.sup_menu{position: absolute;top: 60px;right: 0;width:100%;background: #fff;}
+	.sup_menu ul{_background: #000;float:right;}
+	.sup_menu ul li{float: left;width: 120px;height: 190px;	_background:pink;margin-left: 10px;}
+	.sup_menu ul li:after{content:"";display: block;width: 1px;height: 190px;background:rgba(5,5,5,0.5);position: absolute;top: 0;margin-left: -5px;}
+	.sup_menu ul li:first-child:after{display:none;}
+	.sup_menu ul li a{display: block;text-align: center;font-size: 13px;padding: 10px 0 10px 0;}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<div class="main">
+			<div class="header_Wrap clearfix">
+				<h1><a href="#"><img src="images/LOGO.png" alt="LOGO"></a></h1>
+				<nav class="top_menu">
+					<ul class=" clearfix">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">제품정보</a></li>
+						<li><a href="#">EQSH통합경영</a></li>
+						<li><a href="#">인재채용</a></li>
+						<li><a href="#">미디어센터</a></li>
+					</ul>
+				</nav>
+			</div>
+			<nav class="sup_menu">
+				<ul>
+					<li class="sup1">
+						<a href="#">회사개요</a>
+						<a href="#">CEO인사말</a>
+						<a href="#">투자정보</a>
+						<a href="#">사회공헌</a>
+						<a href="#">오시는 길</a>
+					</li>
+					<li class="sup2">
+						<a href="#">공장소개</a>
+						<a href="#">제품소개</a>
+						<a href="#">제품생산능력</a>
+						<a href="#">알기쉬운 석유화학</a>
+					</li>
+					<li class="sup3">
+						<a href="#">EQSH통합경영 소개</a>
+						<a href="#">환경안전보건경영</a>
+						<a href="#">윤리경영</a>
+						<a href="#">지식경영</a>
+					</li>				
+					<li class="sup4">
+						<a href="#">채용공고</a>
+						<a href="#">인사제도</a>
+						<a href="#">채용가이드</a>
+						<a href="#">여천NCC 팀워크</a>
+						<a href="#">채용FAQ</a>
+					</li>
+					<li class="sup5">
+						<a href="#">기업소식</a>
+						<a href="#">기업홍보</a>
+						<a href="#">사보</a>
+						<a href="#">브로슈어</a>
+						<a href="#">석유화학산업동향</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</body>
+</html>
