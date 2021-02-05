@@ -16,11 +16,11 @@
 	<script>
 		$(document).ready(function(){
 			var mySlider = $(".main_slider").bxSlider({
-				controls:false
+				controls:false,pager:false,auto:true,
 			});
 
 			var mySlider1 = $(".promote_slider").bxSlider({
-				controls:false
+				controls:false,pager:false,auto:true,
 			});
 			$(".rightBtn").click(function(){
 				mySlider.goToNextSlide();
@@ -39,153 +39,36 @@
 			innerWidth:700,
 			innerHeight:393.75
 			});
+	});
+		$(function(){
+		var menuPos = $(".header_top").offset().top;
+		var bHeight = $(document).height();
+		$(".menuPos").html(menuPos + "px");
+      $(window).scroll(function(){
+        var scrollY = $(window).scrollTop();
+        console.log(scrollY);
+        $(".scrollY").html(scrollY + "px");
+
+         if(scrollY > menuPos){
+          $(".header_top").addClass("fixed");
+        }else{
+          $(".header_top").removeClass("fixed");
+          }
+          if(scrollY > bHeight/2){
+          $(".top").addClass("view");
+        }else{
+          $(".top").removeClass("view");
+        }
+		});
+      	 $(".top").click(function(){
+       $("html,body").animate({scrollTop:0},1000);
+    	 });
 		});
 	</script>
-	<style>
-	body{min-width: 1260px}
-	#main_header{position: relative;height:1950px;margin-bottom:100px;}
-	.header_top{width: 1260px;height: 60px;position: fixed;_background:pink;left:50%;transform:translateX(-50%);top:10px;z-index:1;}
-	.header_top:hover{border-bottom: 1px solid #fff;}
-	.header_top h1{float: left;line-height: 60px;}
-	.header_top h1 a{}
-	.header_top h1 a img{}
-	.header_top .top_menu{float: right;line-height: 60px;}
-	.header_top .top_menu>ul{}
-	.header_top .top_menu>ul>li{float: left;position: relative;width: 150px;margin-right: 10px;}
-	.header_top .top_menu:hover .sup_menu{display: block;}
-	.header_top .top_menu>ul>li>a{display: block;font-size: 17px;font-weight: bold;color:white;text-align: center;}
-	.header_top .top_menu>ul>li:hover a{color:black;}
-	.header_top .top_menu>ul>li:hover{background: #fff; transition: 0.5s;}
-	.header_top .top_menu>ul>li:hover .sup_menu>li>a{color:white;}
-
-	.sup_menu{display: none;width: 160px;height: 300px;position: absolute;}
-	.sup_menu li{height: 60px;}
-	.sup_menu>li>a{display: block;font-size:13px;text-align: center;font-weight: bold;color:white;}
-	.sup_menu>li>a:hover{border-bottom: 1px solid #fff;}
-	/*slider*/
-	.slider_Wrap{height: 1005px;position: relative;}
-	.slider_Wrap li{height: 1005px;background-repeat: no-repeat;background-position: center;background-size: cover;}
-	.slider_Wrap li.slider_1st{background-image: url(images/mainbn01.jpg);}
-	.slider_Wrap li.slider_2st{background-image: url(images/mainbn02.jpg);}
-	.slider_Wrap li.slider_3st{background-image: url(images/mainbn03.jpg);}
-	.slider_Wrap li.slider_4st{background-image: url(images/mainbn04.jpg);}
-	.slider_Wrap li.slider_5st{background-image: url(images/mainbn05.jpg);}
-	.leftBtn{position: absolute;top:50%;padding: 15px;cursor:pointer;margin-top: -35px}
-	.rightBtn{position: absolute;top:50%;padding: 15px;cursor:pointer;margin-top: -35px;}
-	.rightBtn{right:0px;}
-	.slider_Wrap .slider_txt{position: absolute;width: 800px;left:50%;margin-left:-400px;text-align: center;color:white;top:30%;}
-	.slider_Wrap .slider_txt h2{font-size:2em;margin-bottom: 30px;}
-	.slider_Wrap .bx-wrapper {-moz-box-shadow: none;
-												    -webkit-box-shadow: none;
-												    box-shadow: none;
-												    border: 0 none;
-												    margin-bottom: 0;}
-	.slider_Wrap .bx-wrapper .bx-pager{bottom:400px;}
-	.bx-wrapper .bx-pager.bx-default-pager a {
-    background: #fff;
-    text-indent: -9999px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    outline: 0;
-    -moz-border-radius: 5
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
-    background: #ff6100;
-}
-.bx-wrapper {
-    -moz-box-shadow: 0 0 5px #ccc;
-    -webkit-box-shadow: 0 0 5px #ccc;
-    box-shadow: 0 0 5px #ccc;
-    border:none;
-    background: none;}
-
-.content{width: 1260px;position: absolute;bottom: 0px;left:50%;transform:translateX(-50%);}
-.content>ul>li{
-		float: left;width: 25%;height: 315px;position: relative;
-		overflow: hidden;transition:0.3s;
-	}
-.images{width: 315px;height: 315px;}
-
-	.content>ul>li a{color:white;}
-		.content li.ct1st{background: #282e80;font-size: 18px;overflow: hidden;}
-	.content li.ct2st{position: relative;}
-	.content li.ct3st{width: 50%;background: #ff6100;}
-	.content li.ct4st{background: #ff6100;}
-	.content li.ct5st{background: #282e80;font-size: 18px;}
-	.content li.ct6st{width: 50%;background-image: url(images/con6.jpg);}
-	.content li.ct7st{height: 630px;background-image: url(images/con7.jpg);}
-	.content li.ct8st{width: 50%;background-image: url(images/con8.jpg);}
-	.content li.ct9st{background: #282e80;}
-	.content li.ct10st{background: #282e80;}
-	.content li.ct11st{width: 50%;background-image: url(images/con11.jpg);}
-
-	.content li.ct1st a,
-	.content li.ct5st a,
-	.content li.ct9st a,
-	.content li.ct10st a
-	{text-align: center;display: block;height: 100%;padding-top:85px;}
-
-	.content li.ct1st img,
-	.content li.ct5st img,
-	.content li.ct9st img,
-	.content li.ct10st img
-	{display: block;margin: 0 auto;margin-bottom:30px;width: 80px;height: 80px;transition: 0.3s;}
-
-	.content li.ct1st:hover img{transform: scale(1.3);}
-	.content li.ct5st:hover img{transform: scale(1.3);}
-	.content li.ct9st:hover img{transform: scale(1.3);}
-	.content li.ct10st:hover img{transform: scale(1.3);}
-
-	.play{position: absolute;left:50%;transform:translateX(-50%);top: 110px;}
-	.content li.ct2st div{width: 315px;height: 315px;position: absolute;background:rgba(5,5,5,0.5);}
-
-
-	.ct3st{}
-	h3{position: absolute;top:40px;left: 40px;color:white;}
-	.slider{width: 630px;height:315px;}
-	.slider li.promote{width: 630px;height:315px;}
-	.slider .left{
-		float: left;width: 315px;height: 315px;padding: 80px 40px;
-		position: relative;color:white;
-	}
-	.slider .left:after{
-		content:"";display: block;
-		border-width:30px;
-		border-style:solid;
-		border-color:transparent transparent transparent #ff6100;
-		position: absolute;
-		top:50%;transform:translateY(-50%);
-		right:-60px;
-	}
-	.slider .right{float: right;width: 315px;height: 315px;}
-	.ct3st .btn{position: absolute;bottom: 20px;left: 213px;width: 76px;}
-	.ct3st .btn img{padding: 7px;width: 30px;height: 30px;float: left;border: 1px solid #fff;}
-	.ct4st{float: left;width: 315px;height: 315px;padding: 80px 40px;
-		position: relative;color:white;}
-	.ct4st a{border: 1px solid #fff;font-size: 15px;display:block;text-align: center;padding: 10px;margin-top: 30px;}
-	.ct4st a:hover{background:white;color:black;}
-
-	.ct6st:hover div{right: 0;display:1;}
-	.ct6st>div{background:rgba(2,2,2,0.3);position: absolute;top: 0;right: 100%;height: 100%;width: 100%;display:0;transition:0.5s;}
-	.ct6st>div>ul>li{float: left;margin-top: 100px;margin-left: 60px;}
-	.ct6st>div>ul>li>a{display:block;}
-	.ct6st>div>ul>li>a>p{color:white;position: absolute;top: 140px;margin-left: 35px;font-size: 15px;text-align: center;}
-
-	.ct7st:hover div{bottom: 0;display:1;}
-	.ct7st>div{background:rgba(2,2,2,0.3);position: absolute;bottom:100%;height: 100%;width: 100%;display:0;transition:0.5s;}
-	.ct7st>div>ul{}
-	.ct7st>div>ul>li{_background: red;position: absolute;top:100px;width: 100%;height: 400px;}
-	.ct7st>div>ul>li>a{display:block;color:white;font-size: 15px;margin-top: 100px;margin-left: 20px;}
-	.ct7st>div>ul>li>a:hover{font-weight: bold;}
-	</style>
 </head>
 <body>
 	<header id="main_header">
-		<div class="header_top">
+		<div class="header_top clearfix">
 				<h1><a href="#"><img src="images/LOGO.png" alt="LOGO"></a></h1>
 				<nav class="top_menu">
 					<ul class="clearfix">
@@ -286,11 +169,10 @@
 				</a>
 			</li>
 			<li class="ct2st">
-				<div></div>
+				<img src="images/con02.jpg" alt="이미지" class="images">
 				<a href="https://www.youtube.com/embed/V-aQsaFo9Z0" class="modal" title="영상">
 					<img src="images/con02.png" alt="실행" class="play">
 				</a>
-				<img src="images/con02.jpg" alt="이미지" class="images">
 			</li>
 			<li class="ct3st">
 				<div class="slider">
@@ -359,7 +241,7 @@
 			<li class="ct6st">
 				<div>
 					<h3>EQSH통합경영</h3>
-					<ul>
+					<ul class="clearfix">
 						<li>
 							<a href="#" class="ct6a"><img src="images/con06.png" alt="">
 								<p>선진경영<br>시스템</p>
@@ -391,13 +273,17 @@
 				</div>
 			</li>
 			<li class="ct8st">
-				<!-- <a href="#">
-					<img src="images/img01_04.jpg" alt="빛과에너지">
-					<div class="txt">
-						<h3>전력 및 에너지 플렌트</h3>
-						<p>세상을 밝히는<br>빛과 에너지</p>
-					</div>
-				</a> -->
+				<div>
+					<h3>공장소개</h3>
+					<ul class="clearfix">
+						<li>
+							<a href="#">제 1사업장</a>
+							<a href="#">제 2사업장</a>
+							<a href="#">제 3사업장</a>
+							<a href="#">제 4사업장</a>
+						</li>
+					</ul>
+				</div>
 			</li>
 			<li class="ct9st">
 				<a href="#">
@@ -412,16 +298,105 @@
 				</a>
 			</li>
 			<li class="ct11st">
-				<!-- <a href="#">
-					<img src="images/img01_05.jpg" alt="빛과에너지">
-					<div class="txt">
-						<h3>전력 및 에너지 플렌트1</h3>
-						<p>세상을 밝히는<br>빛과 에너지</p>
-					</div>
-				</a> -->
+				<div>
+					<h3>여천NCC 팀워크</h3>
+					<ul>
+						<li>
+							<a href="#">
+								<p>팀워크를 명중시키다!</p><br>
+								<span>여천NCC 구매물류2팀 출하1/출하2담당 구성원들과 함께 ‘비전’이란 주제를<br>가지고 실내 양궁 체험에 나섰다.
+                                개인의 비전은 물론 담당 차원의 비전까지<br> 떠올리며 과녁 중앙을 명중 시키려는 노력은 치열했다.서로의 자세를
+                                교정<br>해주며, 10점 명중의 노하우를 공유하는 경험을 통해 목표에 효과적으로 <br>다가갈 수 있었던 이들의 활약하는
+                                모습을 소개한다.</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</li>
 		</ul>
 		</div>
 	</header>
+	<div id="Our">
+		<h4>Our Challenge</h4>
+		<p>여천NCC의 미래를 짊어져 나갈 열린 마음과 열정을 가진 인재를 모집합니다.</p>
+		<ul class="clearfix">
+			<li>
+				<a href="#">
+					<p class="txt1">인사제도</p>
+					<p class="txt2">여천NCC가 추구하는 인재상과<br>복리후생 등 인사제도를 소개합니다.</p>
+					<div class="wrap">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p class="txt1">직무소개</p>
+					<p class="txt2">여천NCC의 업무별 주요 직무에 대해<br>알려드립니다.</p>
+					<div class="wrap">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p class="txt1">채용절차</p>
+					<p class="txt2">업종별, 단계별 채용 절차에 대해<br>알려드립니다.</p>
+					<div class="wrap">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p class="txt1">채용FAQ</p>
+					<p class="txt2">채용에 대해 궁금하신 점을 알려<br>드립니다.</p>
+					<div class="wrap">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="cbwrap">
+		<ul class="cb clearfix">
+			<li class="cn1">
+				<a href="#">
+					<img src="images/cbicon00.png" alt="">
+					<h6>사회공헌</h6>
+					<p>인간이 오랜 세월 꿈구어 왔던<br>"인간의 행복한 생활"<br>여천NCC가 추구하는 <br>궁극의 목표입니다..</p>
+				</a>
+			</li>
+
+			<li class="cn2">
+				<a href="#" class="a1"><img src="images/cb01.jpg" alt=""></a>
+				<a href="#" class="a2">
+				<p>여천NCC(주) 전문기능직 신입사원,<br>연탄배달 봉사</p>
+				<span>여천NCC(주) 전문기능직 신입사원들이<br>	15일 여수시 소재 저소득 독거세대<br>이웃을 대상으로 '사랑의 연탄배달'봉...</span>
+				</a>
+			</li>
+
+			<li class="cn3">
+				<a href="#" class="a1">
+					<p>여천NCC(주), 여수지역 어르신<br>무료 관절수술 지원</p>
+					<span>여천NCC(주) (김재율,최금암 공동대표<br>이사)의 사회공헌 프로그램인 관절<br>사랑 운동이 11년째 지역 사회공헌에...</span>
+				</a>
+				<a href="#" class="a2"><img src="images/cb01-1.jpg" alt=""></a>
+			</li>
+
+			<li class="cn4">
+				<a href="#" class="a1"><img src="images/cb01-2.jpg" alt=""></a>
+				<a href="#" class="a2">
+					<p>여천NCC(주) 후원'발달장애인<br>꿈꾸는 작은 음악회' 개최</p>
+					<span>여천NCC(주) (이규정,최금암 공동대표)의<br>사회공헌 프로그램인'꿈꾸는 아이들의<br>작은 음악회'가 지난 11월30일 대림...</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="top">top</div>
 </body>
 </html>
