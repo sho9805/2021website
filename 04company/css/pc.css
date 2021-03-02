@@ -11,8 +11,6 @@
 
 	.header_top:hover{border-bottom: 1px solid #fff;}
 	.header_top h1{float: left;line-height: 60px;}
-	.header_top h1 a{}
-	.header_top h1 a img{}
 
 	.header_top .top_menu{float: right;line-height: 60px;}
 	.header_top .top_menu>ul{}
@@ -47,7 +45,7 @@
 	.slider_Wrap .bx-wrapper {-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;border: 0 none;margin-bottom: 0;}
 	.slider_Wrap .bx-wrapper .bx-pager{bottom:400px;}
 	.bx-wrapper .bx-pager.bx-default-pager a {background: #fff;text-indent: -9999px;display: block;width: 10px;height: 10px;margin: 0 5px;outline: 0;-moz-border-radius: 5;-webkit-border-radius: 5px;border-radius: 5px;}
-	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #ff6100;}
+	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #ff9600;}
 	.bx-wrapper {-moz-box-shadow: 0 0 5px #ccc;-webkit-box-shadow: 0 0 5px #ccc;box-shadow: 0 0 5px #ccc; border:none;background: none;}
 	/*slider끝*/
 
@@ -58,16 +56,16 @@
 	.content>ul>li{float: left;width: 25%;height: 315px;position: relative;overflow: hidden;transition:0.3s;}
 	.images{width: 315px;height: 315px;}
 	.content>ul>li a{color:white;}
-	.content li.ct1st{background: #282e80;font-size: 20px;overflow: hidden;}
+	.content li.ct1st{background: #7e00ff;font-size: 20px;overflow: hidden;}
 	.content li.ct2st{position: relative;}
-	.content li.ct3st{width: 50%;background: #ff6100;}
-	.content li.ct4st{background: #ff6100;}
-	.content li.ct5st{background: #282e80;font-size: 20px;}
+	.content li.ct3st{width: 50%;background: #ff9600;}
+	.content li.ct4st{background: #ff9600;}
+	.content li.ct5st{background: #7e00ff;font-size: 20px;}
 	.content li.ct6st{width: 50%;background-image: url(../images/con6.jpg);}
 	.content li.ct7st{height: 630px;background-image: url(../images/con7.jpg);}
 	.content li.ct8st{width: 50%;background-image: url(../images/con8.jpg);}
-	.content li.ct9st{background: #282e80;font-size: 20px;}
-	.content li.ct10st{background: #282e80;font-size: 20px;}
+	.content li.ct9st{background: #7e00ff;font-size: 20px;}
+	.content li.ct10st{background: #7e00ff;font-size: 20px;}
 	.content li.ct11st{width: 50%;background-image: url(../images/con11.jpg);}
 
 	.content li.ct1st a,
@@ -90,12 +88,11 @@
 	.ct2st:hover .images{transform: scale(1.1);}
 
 
-	.ct3st{}
 	h3{position: absolute;top:40px;left: 40px;color:white;font-size: 20px;}
 	.slider{width: 630px;height:315px;}
 	.slider li.promote{width: 630px;height:315px;}
 	.slider .left{float: left;width: 315px;height: 315px;padding: 80px 40px;position: relative;color:white;}
-	.slider .left:after{content:"";display: block;border-width:30px;border-style:solid;border-color:transparent transparent transparent #ff6100;position: absolute;top:50%;transform:translateY(-50%);right:-60px;}
+	.slider .left:after{content:"";display: block;border-width:30px;border-style:solid;border-color:transparent transparent transparent #ff9600;position: absolute;top:50%;transform:translateY(-50%);right:-60px;}
 	.slider .right{float: right;width: 315px;height: 315px;}
 	.ct3st .btn{position: absolute;bottom: 20px;left: 213px;width: 76px;}
 	.ct3st .btn img{padding: 7px;width: 30px;height: 30px;float: left;border: 1px solid #fff;}
@@ -138,7 +135,7 @@
 
 	/*Our시작*/
 	#Our{height: 727px;margin-bottom: 100px;background-image: url(../images/Ourbg.jpg);background-repeat: no-repeat;background-size: cover;position: relative;left:50%;transform:translateX(-50%);}
-	#Our h4{color:#ff6100;;font-size: 50px;position: absolute;left:50%;transform:translateX(-50%);top: 100px;}
+	#Our h4{color:#ff9600;;font-size: 50px;position: absolute;left:50%;transform:translateX(-50%);top: 100px;}
 	#Our>p{color:white;position: absolute;position: absolute;left:50%;transform:translateX(-50%);top: 170px;}
 	#Our ul{width: 1260px;height: 377px;_background: #000;position: absolute;left:50%;transform:translateX(-50%);bottom: 100px;}
 	#Our ul li{width: 262px;height: 377px;	background: #fff;float: left;margin-right: 70px;background-size: 262px, 258px;background-repeat: no-repeat;border-radius:10px;transition:0.3s;}
@@ -151,60 +148,77 @@
 	#Our ul li a{position: relative	;width:262px;height: 377px;display: block;}
 	#Our ul li a .txt1{font-weight: bold;font-size: 20px;position: absolute;bottom: 70px;left: 25px;}
 	#Our ul li a .txt2{font-size: 13px;position: absolute;bottom: 25px;left: 25px;}
-	#Our ul li a .wrap{width: 20px;height: 20px;_background:pink;position: absolute;bottom: 60px;right: 20px;transform:translate(-50%,-50%);border-radius:10px;border: 2px solid #ff6100;transition:0.5s;}
-	#Our ul li a .wrap .bar1,#Our ul li a .wrap .bar2{width: 10px;height: 2px;background: #ff6100;position: absolute;left: 50%;top:50%;transform:translate(-50%,-50%);border-radius:3px;}
+	#Our ul li a .wrap{width: 20px;height: 20px;_background:pink;position: absolute;bottom: 60px;right: 20px;transform:translate(-50%,-50%);border-radius:10px;border: 2px solid #ff9600;transition:0.5s;}
+	#Our ul li a .wrap .bar1,#Our ul li a .wrap .bar2{width: 10px;height: 2px;background: #ff9600;position: absolute;left: 50%;top:50%;transform:translate(-50%,-50%);border-radius:3px;}
 	#Our ul li a .wrap .bar2{transform:translate(-50%,-50%) rotate(90deg);}
 	#Our ul li a:hover .wrap{transform:translate(-50%,-50%) rotate(180deg);}
 	/*Our끝*/
 
 
 	/*cb시작*/
-	.cbwrap{position: relative;width: 1260px;height: 727px;background:pink;margin: 0 auto;margin-bottom: 100px;text-align: center;}
+	.cbwrap{position: relative;width: 1260px;height: 727px;margin: 0 auto;margin-bottom: 100px;text-align: center;}
 	.cb{width: 100%;height: 100%;}
-	.cb li{float: left;width: 25%;height: 100%;}
-	.cb li:nth-child(2n){background:yellow;}
-	.cb .cn1{background: #282e80;}
+	.cn2:hover .a1{background: #7e00ff;}
+	.cn3:hover .a1{background: #7e00ff;}
+	.cn4:hover .a1{background: #7e00ff;}
+	.cn2:hover .a1:after{content:"";display: block;border-width:30px;border-style:solid;border-color: transparent transparent #7e00ff;position: absolute;top:50%;transform:translateY(-50%);margin-left: 125px;margin-top: -25px;}
+	.cn3:hover .a1:after{content:"";display: block;border-width:30px;border-style:solid;border-color: transparent transparent #7e00ff;position: absolute;top:50%;transform:translateY(-50%) rotate(180deg);margin-left: 125px;margin-top: 25px;}
+	.cn4:hover .a1:after{content:"";display: block;border-width:30px;border-style:solid;border-color: transparent transparent #7e00ff;position: absolute;top:50%;transform:translateY(-50%);margin-left: 125px;margin-top: -25px;}
+	.cb li{float: left;width: 25%;height: 100%;color:white;}
+	.cb .cn1{background: #7e00ff;}
 	.cb .cn1 a{position: absolute;	width: 25%;height: 100%;color:white;display:block;}
-	.cb .cn1 a img{display: block;margin: 0 auto;margin-top: 100px;	}
+	.cb .cn1 a img{display: block;margin: 0 auto;margin-top: 150px;	}
 	.cb .cn1 a h6{font-size: 30px;margin-top: 100px;}
 	.cb .cn1 a p{font-size: 20px;margin-top: 20px;}
-	.cb .cn2 a,.cb .cn3 a,.cb .cn4 a{position: absolute;height: 50%;display: block;}
-	.cb .cn2 a img,.cb .cn3 a img,.cb .cn4 a img{width: 100%;height: 100%;	}
+	.cb .cn2 a,.cb .cn3 a,.cb .cn4 a{display: block;width: 100%;height: 50%;}
+	.cb .cn2 a img,.cb .cn3 a img,.cb .cn4 a img{height: 100%;width: 100%;}
 	.a2{bottom: 0;}
-	.cb li a p{font-size: 17px;font-weight:bold;}
-	.cb li a span{font-size: 13px;}
-
-
-
-	/*.cb li{position: relative;;left: 0;	height: 50%;}
-	.cb li div{_background:pink;position: absolute; left:50%;transform:translateX(-50%);top: 25%;}
-	.cb li div img{margin-left: 10px;margin-bottom: 20px;	}
-	.cb li div h6{font-size: 2em;color:white;}
-	.cb li p{color:white;text-align: center;}*/
+	.p1{font-size: 18px;font-weight:bold;color:white;}
+	.p2{font-size: 15px;color:white;margin-top: 30px;}
+	.p3{font-size: 15px;color:white;margin-top: 80px;margin-left: 200px;}
+	.a1{padding-top: 110px;background:#ff9600;}
 	/*cb끝*/
 
+	/*management시작*/
+	.management{width: 1260px;height: 316px;margin: 0 auto;overflow: hidden;margin-bottom: 100px;}
+	.management h6{font-size: 30px;float: right;padding: 20px;color:#ff9600;}
+	.management a{font-weight: bold;;color:#ff9600;transition:0.3s;font-size: 20px;margin-top: 240px;display: block;border: 1px solid #ff9600;width: 200px;height: 50px;text-align: center;line-height: 50px;margin-left:400px;}
+	.management div{float: left;width: 50%;height: 100%;background-repeat: no-repeat;background-size: cover;border: 5px solid #ff9600;}
+	.management1{background-image: url(../images/kms.jpg);}
+	.management2{background-image: url(../images/yoon.jpg);}
+	.management a:hover{background: #ff9600;color:white;}
+	/*management끝*/
 
+	/*footer시작*/
+	footer{height: 220px;background:#f2f2f2;}
+	footer ul{width: 1300px;margin: 0 auto;padding: 50px 20px;}
+	.footerA{font-weight: bold;margin-bottom: 50px;}
+	.footerA a{margin-right: 50px;display: block;float: left;}
+	.footerA a:after{content:"";width: 1px;height: 15px;background: #000;position: absolute;margin-left: 25px;margin-top: 5px;}/*커서포인터 없애기*/
+	.footerP{}
+	/*footer끝*/
 
-
-
-
-
-
-
-
+	/*side시작*/
 	.top{
       position: fixed;width: 50px;height: 50px;
       right: 50px;bottom: 50px;
-      background: #000;color:white;text-align: center;
-      line-height:50px;border-radius:25px;
+      border: 2px solid #000;color:#000;font-weight:bold;text-align: center;
+      line-height:44px;border-radius:25px;
       animation:viewTop 1s infinite alternate;
-      opacity:0;transition:0.3s;cursor:pointer
-    }
+      opacity:0;transition:0.3s;cursor:pointer;
+      box-shadow:5px 10px 15px rgba(5,5,5,0.3);}
 
+      .top:hover{
+      position: fixed;width: 50px;height: 50px;
+      right: 50px;bottom: 50px;background: #000;color:#fff;font-weight:bold;text-align: center;
+      line-height:44px;border-radius:25px;
+      animation:viewTop 1s infinite alternate;
+      opacity:0;cursor:pointer;
+      box-shadow:5px 10px 15px rgba(5,5,5,0.3);}
     @keyframes viewTop{
       from{transform:translateY(-20px)}
       to{transform:translateY(0)}
     }
 
-
     .top.view{opacity:1}
+    /*side끝*/
