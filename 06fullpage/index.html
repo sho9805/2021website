@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>fullpage</title>
+  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/jquery.youtube-background.js?v=1.0.7"></script>
+  <script>
+    $(function(){
+      $("#fullpage").fullpage({
+        menu:"#topMenu", //메뉴지정
+        anchors:["m1st","m2st","m3st","m4st"],
+        navigation:true,
+        afterLoad:function(anchorslink,index){
+          console.log(anchorslink+','+index);
+          if(index == 1){
+            $("#onView1st").addClass("move");
+          }else{
+            $("#onView1st").removeClass("move")
+          }
+
+          if(index == 2){
+            $("#onView2st").addClass("move");
+          }else{
+            $("#onView2st").removeClass("move")
+          }
+
+          if(index == 3){
+            $("#onView3st").addClass("move");
+          }else{
+            $("#onView3st").removeClass("move")
+          }
+
+          if(index == 4){
+            $("#onView4st").addClass("move");
+          }else{
+            $("#onView4st").removeClass("move")
+          }
+
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav id="navTop">
+    <ul class="clearfix" id="topMenu">
+      <li data-menuanchor="m1st"><a href="#m1st">MENU1</a></li>
+      <li data-menuanchor="m2st"><a href="#m2st">MENU2</a></li>
+      <li data-menuanchor="m3st"><a href="#m3st">MENU3</a></li>
+      <li data-menuanchor="m4st"><a href="#m4st">MENU4</a></li>
+      <li data-menuanchor="m5st"><a href="#m5st">MENU5</a></li>
+    </ul>
+  </nav>
+  <div id="fullpage">
+    <!-- section 1st -->
+    <div class="section page1" data-anchor="m1st">
+      <div class="main" id="onView1st">
+        <h3>처음 제작해본 사이트</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eligendi.</p>
+        <a href="../01himedia/index.html">more</a>
+      </div>
+      <div class="scroll">
+        <a href="#m2st"><img src="images/btn_scroll.png" alt=""></a>
+      </div>
+    </div>
+
+    <!-- section 2st -->
+    <div class="section page2" data-anchor="m2st">
+      <div class="main" id="onView2st">
+        <h3>슬라이드, 호버효과, 모달 등을 활용한 사이트</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eligendi.</p>
+        <a href="../02college/index.html">more</a>
+      </div>
+      <div class="scroll">
+        <a href="#m3st"><img src="images/btn_scroll.png" alt=""></a>
+      </div>
+    </div>
+
+    <!-- section 3st -->
+    <div class="section page3" data-anchor="m3st">
+      <div class="main" id="onView3st">
+        <h3>폼문서와 애니메이션 효과를 적용한 사이트</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eligendi.</p>
+        <a href="../03Travel_Agency/index.html">more</a>
+      </div>
+      <div class="scroll">
+        <a href="#m4st"><img src="images/btn_scroll.png" alt=""></a>
+      </div>
+    </div>
+
+	<!-- section 4st -->
+    <div class="section page4" data-anchor="m4st">
+      <div class="main" id="onView4st">
+        <h3>스크롤 효과를 적용한 사이트1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eligendi.</p>
+        <a href="../04company/index.html">more</a>
+      </div>
+      <div class="scroll">
+        <a href="#m5st"><img src="images/btn_scroll.png" alt=""></a>
+      </div>
+    </div>
+
+    <!-- section 5st -->
+    <div class="section page5" data-anchor="m5st">
+      <div class="slide "><h4>조소현</h4></div>
+      <div class="slide"><h4>980511</h4></div>
+      <div class="slide"><h4>010-2776-6141</h4></div>
+      <div class="slide"><h4>sho9805@naver.com</h4></div>
+      <div class="slide"><h4>https://github.com/sho9805</h4></div>
+      <div class="top">top</div>
+    </div>
+  </div>
+</body>

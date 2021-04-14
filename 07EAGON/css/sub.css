@@ -1,0 +1,68 @@
+@charset "utf-8";
+	body{min-width: 1260px}
+
+	/*header 시작*/
+	#main_header{position: relative;_background: pink;}
+	.header_top{width: 1260px;position: absolute;_background:pink;left:50%;transform:translateX(-50%);top:10px;z-index:1;}
+	header>div.fixed{position: fixed;background: #000;}
+	header>div.fixed .top_menu>ul>li:hover{background: #fff;}
+	header>div.fixed .top_menu>ul>li:hover a{color: #000;}
+	header>div.fixed .top_menu:hover .sup_menu{display: none;}
+
+	.header_top:hover{border-bottom: 1px solid #fff;}
+	.header_top h1{float: left;line-height: 60px;}
+
+	.header_top .top_menu{float: right;line-height: 60px;}
+	.header_top .top_menu>ul{}
+	.header_top .top_menu>ul>li{float: left;position: relative;width: 150px;margin-right: 10px;}
+	.header_top .top_menu:hover .sup_menu{display: block;}
+	.header_top .top_menu>ul>li>a{display: block;font-size: 17px;font-weight: bold;color:white;text-align: center;}
+	.header_top .top_menu>ul>li:hover a{color:black;}
+	.header_top .top_menu>ul>li:hover{background: #fff; transition: 0.5s;}
+	.header_top .top_menu>ul>li:hover .sup_menu>li>a{color:white;}
+
+	.sup_menu{display: none;width: 160px;height: 300px;position: absolute;}
+	.sup_menu li{height: 60px;}
+	.sup_menu>li>a{display: block;font-size:14px;text-align: center;font-weight: bold;color:white;}
+	.sup_menu>li>a:hover{border-bottom: 1px solid #fff;}
+	/*header 끝*/
+	.cons{height: 200px;overflow: hidden;position: relative;}
+	.cons img{width: 1260px;position: absolute;bottom: -200px;left:50%;transform:translateX(-50%);}
+	.con{width: 1260px;margin: 0 auto;}
+	.con img{width: 1260px;}
+
+	/*footer시작*/
+	footer{height: 220px;background:#f2f2f2;}
+	footer ul{width: 1300px;margin: 0 auto;padding: 50px 20px;}
+	.footerA{font-weight: bold;margin-bottom: 50px;}
+	.footerA a{display: block;float: left;position: relative;padding:0 20px;}
+	.footerA a:first-child{padding-left: 0;}
+	.footerA a:after{content:"";width: 1px;height: 15px;background: #000;position: absolute;right: 0;top:5px;}/*커서포인터 없애기*/
+	.footerA a:last-child:after{content:"";display: none;}
+	.footerP{}
+	/*footer끝*/
+
+	/*side시작*/
+	.top{
+      position: fixed;width: 50px;height: 50px;
+      right: 50px;bottom: 50px;
+      border: 2px solid #000;color:#000;font-weight:bold;text-align: center;
+      line-height:44px;border-radius:25px;
+      animation:viewTop 1s infinite alternate;
+      opacity:0;transition:0.3s;cursor:pointer;
+      box-shadow:5px 10px 15px rgba(5,5,5,0.3);}
+
+      .top:hover{
+      position: fixed;width: 50px;height: 50px;
+      right: 50px;bottom: 50px;background: #000;color:#fff;font-weight:bold;text-align: center;
+      line-height:44px;border-radius:25px;
+      animation:viewTop 1s infinite alternate;
+      opacity:0;cursor:pointer;
+      box-shadow:5px 10px 15px rgba(5,5,5,0.3);}
+    @keyframes viewTop{
+      from{transform:translateY(-20px)}
+      to{transform:translateY(0)}
+    }
+
+    .top.view{opacity:1}
+    /*side끝*/

@@ -1,0 +1,25 @@
+@charset "utf-8";
+	body{min-width: 1260px}
+
+/*header시작*/
+	header{width: 980px;_background: #000;margin: 0 auto;padding: 10px 0;}
+	.header_top{}
+	.header_top a{padding: 0;display: block;width: 80px;}
+	.header_top a img{display: block;}
+
+	.utilWrap{margin-top: -60px;height: 30px;float: right;}
+	.utilMenu{}
+	.utilMenu ul{float: right;}
+	.utilMenu ul li{float: left;position: relative;}
+	.utilMenu ul li:after{content:"";display: block;width: 1px;height: 15px;background:#ccc;position: absolute;top: 7px;right: 0px;}
+	.utilMenu ul li a{font-size:10px;display: block;padding: 0 10px;line-height: 30px;margin-right: 1px;}
+	.utilMenu ul li a:hover{background: #ddd;}
+
+	.gnbWrap{width: 980px;margin: 0 auto;}
+	.gnbMenu{}
+	.gnbMenu ul{width: 750px;position: absolute;top: 35px;left:70%;transform:translateX(-70%);}
+	.gnbMenu ul li{float: left;width: 150px;box-sizing: border-box;}
+	.gnbMenu ul li a{display: block;line-height:30px;text-align: center;font-weight:bold;}
+	.gnbMenu ul li:hover{color:red;background-color:rgb(255,127,39);}
+	.gnbMenu ul li:hover a{color:#fff;}
+
