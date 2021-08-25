@@ -26,8 +26,7 @@
 .header .searchTitle{font-weight: bold;font-size: 80%;position: absolute;top:6px;left: 10px;}
 .header .searchInp{border: none;position: absolute;top: 4px;left: 90px;width: 150px;height: 80%;}
 .header .searchBtn{position: absolute;right: 10px;top: 2px;text-indent: -9999px;
-					background-image: url(../images/search.jpg);width: 25px;height: 25px;
-					border: none;background-repeat: no-repeat;background-size: cover;}
+					}
 
 .header .snsWrap{_background: pink;
 				width: 340px;height: 30px;
